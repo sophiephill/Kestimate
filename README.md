@@ -1,0 +1,4 @@
+Scripts for Phillips and Schoenberg (2025) "Efficient non-parametric estimation of variable productivity Hawkes processes".
+I compare methods for estimating a variable productivity in a Hawkes process using: analytic maximum likelihood estimator described in Schoenverg 2022, a regularized version of this estimator, an empirical estimator based on Weltzer 2016, and a binned least-squares estimator. Kestimate_functions.R includes helper function to compute the SVD solution to Ax=b, for example.
+
+I also present a way to estimate the triggering kernel with a histogram estimator by discretzing the Hawkes process and estimating the step heights with least-squares, similar to that proposed in Kirchner 2016. I compare this to the iterative EM algorithm in Marsan and Lengline (2008). misd.R contains my implementation of this method. 
